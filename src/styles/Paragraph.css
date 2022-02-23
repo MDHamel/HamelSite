@@ -1,0 +1,50 @@
+.title{
+    
+    color:var(--Title);
+    margin-bottom: 50px;
+    margin-left:200px;
+    width: fit-content;
+    text-align: center;
+
+}
+
+.title h1{
+    padding: 0px 50px;
+    margin-bottom: -5px;
+}
+
+.content{
+    color:var(--Text);
+    margin:20px;
+    padding: 0 250px;
+    margin-bottom: 150px;
+}
+
+.contentPara{
+    position:relative;
+    z-index: 10;
+}
+
+#diamond{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    rotate: 45deg;
+    background-color: var(--Title);
+    vertical-align:middle;
+
+}
+
+#gap{
+    display: inline-block;
+    width:15px;
+}
+
+#line{
+    display: inline-block;
+    width:100%; 
+    height: 4px;
+    background-color: var(--Title);
+    vertical-align:middle;
+
+}

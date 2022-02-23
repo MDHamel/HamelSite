@@ -1,0 +1,76 @@
+@import url('Colors.css');
+
+.outter{
+    width: 100%;
+
+    position: sticky;
+
+    margin-top: 0px;
+    bottom: 0px;
+    top: 0px;
+}
+
+nav{
+    text-align: justify;
+    padding: 16px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    
+    z-index: 1000;
+
+    background-color: var(--NavbarBG);
+    user-select: none;
+
+    cursor: default;
+}
+
+nav a{
+    color:aliceblue;
+    display: inline-block;
+
+    font-family: sans-serif;
+    text-transform: uppercase;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    width: 200px;
+
+    padding: 20px 0;
+    margin: -15px 6.5%;
+
+    
+    text-decoration: none;
+    
+}
+
+#special{
+    color:var(--NavbarBG);
+    position:absolute;
+
+    float: left;
+
+    
+    font-family: sans-serif;
+    text-transform: uppercase;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    width:fit-content;
+    text-align: center;
+    padding: 20px 2%;
+
+    top: 30px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+nav a:hover, #special:hover{
+    color:var(--BlueText);
+    background-color: var(--NavbarHL)
+}
