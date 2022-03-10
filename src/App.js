@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import './Phone.css';
 import {motion} from "framer-motion";
