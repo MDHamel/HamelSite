@@ -1,0 +1,47 @@
+#phone{
+    position: fixed;
+    display: flex;
+    margin-top:0px;
+
+    z-index: 0;
+    top:2vh; 
+    height: 130vh;
+    margin: 0;
+    left: 31.5vw;
+    /* max-width: 135vh;
+    width: auto; */
+}
+
+
+
+.phone-margin{
+    text-align: center;
+    position: fixed;
+    float: left;
+    display: flex;
+    overflow-y: scroll;
+    color: #eee;
+    
+    height: 83vh;
+    max-width: 45vh;
+    width: auto;
+
+    top:calc(3vw);
+    left: calc(50% - 10.5vw);
+
+    z-index: 20;
+}
+
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+.phone-margin{
+    scrollbar-width: none;
+}
+
+.pseudoBody{
+    position: inherit;
+    width: inherit;
+    height: 100%;
+}
