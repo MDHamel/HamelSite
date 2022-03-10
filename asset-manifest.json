@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/HamelSite/static/css/main.c631021f.css",
-    "main.js": "/HamelSite/static/js/main.c54ab814.js",
+    "main.css": "/HamelSite/static/css/main.2d052add.css",
+    "main.js": "/HamelSite/static/js/main.76d20e56.js",
     "static/js/787.b33774a1.chunk.js": "/HamelSite/static/js/787.b33774a1.chunk.js",
-    "static/media/testHeadImg.jpg": "/HamelSite/static/media/testHeadImg.1cb67ef1e9029b710f5c.jpg",
-    "static/media/testProfPic.jpg": "/HamelSite/static/media/testProfPic.f4812f017d99a0f4eb8b.jpg",
+    "static/media/phone-in-hand-COLORED.png": "/HamelSite/static/media/phone-in-hand-COLORED.ef7e4ffc83da5282983e.png",
+    "static/media/about-me-right.png": "/HamelSite/static/media/about-me-right.fed71b0a13299dc260f2.png",
+    "static/media/exp-right.png": "/HamelSite/static/media/exp-right.b23ac271a7cb08127a73.png",
+    "static/media/about-me-left.png": "/HamelSite/static/media/about-me-left.917653f21551ac5d54d5.png",
+    "static/media/exp-left.png": "/HamelSite/static/media/exp-left.4731e6ab5b5bfe5e4b7e.png",
     "index.html": "/HamelSite/index.html",
-    "main.c631021f.css.map": "/HamelSite/static/css/main.c631021f.css.map",
-    "main.c54ab814.js.map": "/HamelSite/static/js/main.c54ab814.js.map",
+    "main.2d052add.css.map": "/HamelSite/static/css/main.2d052add.css.map",
+    "main.76d20e56.js.map": "/HamelSite/static/js/main.76d20e56.js.map",
     "787.b33774a1.chunk.js.map": "/HamelSite/static/js/787.b33774a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c631021f.css",
-    "static/js/main.c54ab814.js"
+    "static/css/main.2d052add.css",
+    "static/js/main.76d20e56.js"
   ]
 }
