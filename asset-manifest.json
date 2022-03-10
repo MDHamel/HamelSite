@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/HamelSite/static/css/main.3c17e875.css",
-    "main.js": "/HamelSite/static/js/main.18158e64.js",
+    "main.css": "/HamelSite/static/css/main.c631021f.css",
+    "main.js": "/HamelSite/static/js/main.c54ab814.js",
     "static/js/787.b33774a1.chunk.js": "/HamelSite/static/js/787.b33774a1.chunk.js",
     "static/media/testHeadImg.jpg": "/HamelSite/static/media/testHeadImg.1cb67ef1e9029b710f5c.jpg",
     "static/media/testProfPic.jpg": "/HamelSite/static/media/testProfPic.f4812f017d99a0f4eb8b.jpg",
-    "static/media/logo.svg": "/HamelSite/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/HamelSite/index.html",
-    "main.3c17e875.css.map": "/HamelSite/static/css/main.3c17e875.css.map",
-    "main.18158e64.js.map": "/HamelSite/static/js/main.18158e64.js.map",
+    "main.c631021f.css.map": "/HamelSite/static/css/main.c631021f.css.map",
+    "main.c54ab814.js.map": "/HamelSite/static/js/main.c54ab814.js.map",
     "787.b33774a1.chunk.js.map": "/HamelSite/static/js/787.b33774a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c17e875.css",
-    "static/js/main.18158e64.js"
+    "static/css/main.c631021f.css",
+    "static/js/main.c54ab814.js"
   ]
 }
