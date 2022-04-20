@@ -1,15 +1,15 @@
 #phone{
     position: fixed;
-    display: flex;
-    margin-top:0px;
 
+    margin:0px;
+    height: 130vh;
+    width: 60vw;
     z-index: 0;
     top:2vh; 
-    height: 130vh;
-    margin: 0;
-    left: 31.5vw;
-    /* max-width: 135vh;
-    width: auto; */
+    
+    left: 0;
+    transform: translate(54%,0);
+
 }
 
 
@@ -17,17 +17,16 @@
 .phone-margin{
     text-align: center;
     position: fixed;
-    float: left;
-    display: flex;
     overflow-y: scroll;
     color: #eee;
     
     height: 83vh;
-    max-width: 45vh;
-    width: auto;
+    width: 45vh;
 
-    top:calc(3vw);
-    left: calc(50% - 10.5vw);
+    top: 8vh;
+    left: 50vw;
+
+    transform: translate(-50%,0);
 
     z-index: 20;
 }

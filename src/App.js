@@ -17,10 +17,10 @@ import * as content from "./content.js"
 
 function App() {
 
-  const startState = {x:"-100%"}
-  const startStateBelow = {y:"-100vh"}
+  const startState = {x:"-120%"}
+  const startStateBelow = {y:"-200vh"}
   const viewState = {x:0, y:0}
-  const endState = {x:"100%", y:0}
+  const endState = {x:"120%", y:0}
 
   const [aniIndex, setAniIndex] = useState(0)
   
@@ -53,7 +53,7 @@ function App() {
     viewState
   ]
 
-  const codeSmol = {scaleX:0.25, scaleY:0.28, bottom:"-35.8vh"};
+  const codeSmol = {scaleX:0.25, scaleY:0.305, bottom:"-31vh"};
   const codeBig = {scaleX:1, scaleY:1, bottom:"auto", top:0};
 
   const codeAni = [
@@ -71,10 +71,10 @@ function App() {
   ]
 
   const phoneState = [
-    {y:0, x:0, rotateZ:[-30,-25,-24,-23,-22,-21,-20,-20,-20,-15,-10,-5,0]},
+    {y:0, x:0, rotateZ:[-30,-25,-24,-23,-22,-21,-20,-20,-20,-15,-10,-5,0], position:"fixed"},
     {opacity:0, y:"200vh", rotateZ: 0},
-    {opacity:0},
-    {opacity:0}
+    {opacity:0, y:"200vh"},
+    {opacity:0, y:"200vh"}
   ]
 
   
@@ -82,7 +82,7 @@ function App() {
     <div>
       <motion.div
             className="pseudoBody"
-            initial={{x:"-20vw", y:"100vh", rotateZ:-120}}
+            initial={{x:"-20vw", y:"150vh", rotateZ:-120}}
             animate={phoneState[aniIndex]}
             transition={{ease: "easeIn", duration: aniIndex===0?.8:.5}}
             style={{justifyContent: "center"}}
@@ -155,7 +155,7 @@ function App() {
         >
             <Code exit={prev}/> 
         </motion.div>
-        <motion.img src={deskimg} style={{position:"fixed", bottom:"-100vh", width:"100vw", height:"70vh"}}/>
+        <motion.img src={deskimg} style={{position:"fixed", bottom:"-100vh", width:"100vw", height:"75vh"}}/>
       </motion.div>
 
     </div>);

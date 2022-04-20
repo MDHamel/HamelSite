@@ -6,7 +6,9 @@ export const phoneText = <div>
     <p>Hello!</p>
     <p>My Name is Matthew Hamel, and thank you for taking the time to look over my protfolio.</p>
     <br />
-    <h3 style={{color:"goldenrod"}}>This website is still a work in progress, as such some sections may not be completely filled out.</h3>
+    <h3 style={{color:"goldenrod"}}>This website is still a work in progress, as such some sections may not be completely filled out or animations might not work on all resolutions.</h3>
+    <br/>
+    <h3 style={{color:"goldenrod"}}>There is a known issue with Chrome and Chrome based browsers w</h3>
     <br/>
     <p>Press the arrows like the one bellow to transition to the next page.</p>
 
@@ -21,7 +23,7 @@ export const aboutMe = <div>
     Eventually, I found an interest in coding and I've been following that passion ever since. 
     </p>
     <br />
-    <h2>Hobbies and Interests</h2>
+    {/* <h2>Hobbies and Interests</h2>
     <p>
     As mentioned before, I enjoy programming, but it is not my only passion. I also enjoy cooking and baking. From an early age, about 5, I enjoyed flipping pancakes with my parents. In middle school, I took a couple of cooking classes to expose myself to more cooking. After that, I was able to make complete dishes like sweet and sour chicken, popcorn balls, and more. In high school and my early years of college, I watched cooking videos on youtube to further expose me to cooking techniques and recipes. Today, I’m a pretty confident cook and even bake. I find that baking is a good stress reliever for me, so I usually make a lot of sweets and bread.
     </p>
@@ -31,7 +33,7 @@ export const aboutMe = <div>
     <p>
         I enjoy coding, as such, I would dedicate a lot of my free time to learning new languages and making new projects. I learned Java, HTML/CSS/Js, and C# on my own using a mixture of textbooks, documentation, and tutorial videos to slate my hunger for knowledge.
     More recently, I've been getting interested in react and started making several projects using React as a base (this project included).
-    </p>
+    </p> */}
     
 </div>;
 

@@ -7,7 +7,7 @@ import { phoneText } from "../content.js";
 export default function Phone(props){
     
     return(
-        <div>
+        <div style={{ width:"40vw"}}>
             <img id="phone" src={phone}/>
             <div className="phone-margin">
                 <div >
