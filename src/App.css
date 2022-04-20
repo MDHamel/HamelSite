@@ -56,9 +56,18 @@
   position: fixed;
   background-color: #f0f8ff70;
   width:40%;
-  min-height: 87vh;
+  height: 87vh;
   padding: 2%;
   left: 28%;
   top: 2vh;
   border-radius: 20px;
+}
+
+#bodyText p{
+  margin: 20px;
+  color:black;
+}
+
+#bodyText li{
+  margin: 20px;
 }

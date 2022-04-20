@@ -7,8 +7,13 @@ import mirror from "./img/about-me-right.png"
 import aboutLeft from "./img/about-me-left.png"
 import expRight from "./img/exp-right.png"
 import expLeft from "./img/exp-left.png"
-import phone from "./img/phone-in-hand-COLORED.png";
+import deskimg from "./img/desk.png"
+
 import arrow from "./img/Arrow.png"
+import Phone from './component/Phone';
+import Code from './component/Code';
+
+import * as content from "./content.js"
 
 function App() {
 
@@ -20,7 +25,7 @@ function App() {
   const [aniIndex, setAniIndex] = useState(0)
   
   const next = ()=> {
-    setAniIndex(aniIndex+1);
+    setAniIndex(aniIndex===3? 0 : aniIndex+1);
   }
 
   const prev = ()=> {
@@ -41,14 +46,33 @@ function App() {
     endState
   ];
 
+  const codeRoomAni = [
+    startState,
+    startState,
+    startState,
+    viewState
+  ]
+
+  const codeSmol = {scaleX:0.25, scaleY:0.28, bottom:"-35.8vh"};
+  const codeBig = {scaleX:1, scaleY:1, bottom:"auto", top:0};
+
+  const codeAni = [
+    codeSmol,
+    codeSmol,
+    codeSmol,
+    codeBig,
+  ]
+
   const arrowState=[
     {visibility:"hidden", opacity: 0},
-    {visibility:"visible", opacity: 1}
+    {visibility:"visible", opacity: 1},
+    {visibility:"visible", opacity: 1},
+    {opacity: 0},
   ]
 
   const phoneState = [
     {y:0, x:0, rotateZ:[-30,-25,-24,-23,-22,-21,-20,-20,-20,-15,-10,-5,0]},
-    {y:"200vh", rotateZ: 0},
+    {opacity:0, y:"200vh", rotateZ: 0},
     {opacity:0},
     {opacity:0}
   ]
@@ -63,24 +87,7 @@ function App() {
             transition={{ease: "easeIn", duration: aniIndex===0?.8:.5}}
             style={{justifyContent: "center"}}
         >
-            <motion.img id="phone" src={phone}/>
-            <motion.div className="phone-margin">
-                <motion.div >
-                    <motion.h1 >WELCOME</motion.h1>
-                    <br/>
-                    <motion.p >
-                        Hello!<br/><br/>My Name is Matthew Hamel, and thank you for taking the time to look over my protfolio.<br/><br/><br/> Press the arrows like the one bellow to transition to the next page.
-                    </motion.p>
-
-                    <motion.img
-                    src={arrow}
-                    className="arrow"
-                    style={{position: "relative", width: "12%", padding:"4%"}}
-                    id="down"
-                    onTap={next}
-                    />
-                </motion.div>
-            </motion.div>
+            <Phone next={next}/>
         </motion.div>
 
 
@@ -93,10 +100,11 @@ function App() {
         <motion.img className='image' id='left' src={aboutLeft}/>
 
         <motion.div id='bodyText'>
-          <motion.p>TESTING TEXT!</motion.p>
+          <motion.p>{content.aboutMe}</motion.p>
         </motion.div>
-
       </motion.div>
+
+
 
       <motion.div
         initial={startState}
@@ -108,10 +116,13 @@ function App() {
         <motion.img className='image' id="left" src={expLeft}/>
 
         <motion.div id='bodyText'>
-          <motion.p>TESTING TEXT!</motion.p>
+          <div style={{width:"100%", height:"98%", overflowY:"scroll"}}>
+            <motion.p>{content.exp}</motion.p>
+          </div>
         </motion.div>
-
       </motion.div>
+
+      
 
       <motion.img
       src={arrow}
@@ -131,14 +142,23 @@ function App() {
       transition={{duration: .8}}
       />
 
-      
+      <motion.div
+        initial={codeRoomAni[0]}
+        animate={codeRoomAni[aniIndex]}
+        transition={{ease: "easeIn", duration:.5}}
+      >
+        <motion.div
+            style={{position:"fixed", zIndex:1000}}
+            initial={codeAni[0]}
+            animate={codeAni[aniIndex]}
+            transition={{delay:aniIndex===3?1.2:0, duration:aniIndex===3?.5:.25}}
+        >
+            <Code exit={prev}/> 
+        </motion.div>
+        <motion.img src={deskimg} style={{position:"fixed", bottom:"-100vh", width:"100vw", height:"70vh"}}/>
+      </motion.div>
 
-
-
-    </div>
-    
-    
-  );
+    </div>);
 }
 
 export default App;

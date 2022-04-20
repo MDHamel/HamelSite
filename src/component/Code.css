@@ -1,0 +1,111 @@
+.circle{
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1.5vw;
+
+    z-index: 120;
+}
+
+#windowEdge{
+    width: 100vw;
+    height: 5vh;
+    background-color: #2d2f31;
+
+    z-index: 100;
+}
+
+
+#projectPannel{
+    position: fixed;
+    width: 15vw;
+    height: 95vh;
+    background-color: #212326;
+
+    z-index: 70;
+}
+
+.projectList{
+    color: aliceblue;
+    padding: 0;
+    margin-left: 50px;
+    list-style-type: none;
+}
+
+.projectHead{
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+
+#taskBar{
+    width: 100vw;
+    height: 7vh;
+
+    position: fixed;
+    bottom: 0;
+
+    background-color: #222;
+    
+    z-index: 100;
+
+    visibility: hidden;
+    /* maybe no taskbar, screen feels scrunched */
+}
+
+#tabArea{
+    width: 85vw;
+    height: 7vh;
+
+    position: fixed;
+    top:5vh;
+    left: 15vw;
+
+    background-color: #2d343a;
+
+    z-index: 50;
+}
+
+#tabContainer{
+    position:fixed;
+    top: 5.6vh;
+}
+
+.tab{
+    display: inline-block;
+
+    padding: 2vh 5vw;
+    
+    margin: 0px 15px;
+
+    font-size: 1.8vh;    
+
+    background-color: #4f565e;
+
+    color: aliceblue;
+    
+    user-select: none;
+    cursor: pointer;
+}
+
+#selected{
+    background-color: #282b2e;
+}
+
+#document{
+    width: 85vw;
+    height: 90vh;
+
+    position: fixed;
+    left: 15vw;
+    top: 10vh;
+
+    background-color: #282b2e;
+
+}
+
+#body{
+    margin: 3% 3%;
+    color: aliceblue;
+}
+
