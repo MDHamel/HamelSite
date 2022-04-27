@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HamelSite/static/css/main.50e92f2c.css",
-    "main.js": "/HamelSite/static/js/main.7d5719e4.js",
+    "main.css": "/HamelSite/static/css/main.26747f7f.css",
+    "main.js": "/HamelSite/static/js/main.e760482b.js",
     "react-syntax-highlighter/refractor-core-import.js": "/HamelSite/static/js/react-syntax-highlighter/refractor-core-import.8c008436.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/HamelSite/static/js/react-syntax-highlighter_languages_refractor_abap.dd6b4223.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/HamelSite/static/js/react-syntax-highlighter_languages_refractor_actionscript.9c02c330.chunk.js",
@@ -166,8 +166,8 @@
     "static/media/UnoCards.py": "/HamelSite/static/media/UnoCards.090d2ff0e35aff571074.py",
     "static/media/PlayingCards.java": "/HamelSite/static/media/PlayingCards.515a4de00a5ecc84b28d.java",
     "index.html": "/HamelSite/index.html",
-    "main.50e92f2c.css.map": "/HamelSite/static/css/main.50e92f2c.css.map",
-    "main.7d5719e4.js.map": "/HamelSite/static/js/main.7d5719e4.js.map",
+    "main.26747f7f.css.map": "/HamelSite/static/css/main.26747f7f.css.map",
+    "main.e760482b.js.map": "/HamelSite/static/js/main.e760482b.js.map",
     "refractor-core-import.8c008436.chunk.js.map": "/HamelSite/static/js/react-syntax-highlighter/refractor-core-import.8c008436.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.dd6b4223.chunk.js.map": "/HamelSite/static/js/react-syntax-highlighter_languages_refractor_abap.dd6b4223.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.9c02c330.chunk.js.map": "/HamelSite/static/js/react-syntax-highlighter_languages_refractor_actionscript.9c02c330.chunk.js.map",
@@ -323,7 +323,7 @@
     "787.b33774a1.chunk.js.map": "/HamelSite/static/js/787.b33774a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50e92f2c.css",
-    "static/js/main.7d5719e4.js"
+    "static/css/main.26747f7f.css",
+    "static/js/main.e760482b.js"
   ]
 }
