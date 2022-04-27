@@ -1,7 +1,10 @@
-root{
+:root{
     --green: #4ce663;
+    --diffgreen: #80f892;
+    --yellow: #e7d637;
     --white: aliceblue;
     --grey: #333;
     --black: #1a1a1a;
-    --greenback: #43544d;
+    --gunmetalgreeen:#394d42;
+    --greenback: #394d42;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
 .psuedoBody{
   overflow:hidden;
 }
@@ -19,16 +21,17 @@
 }
 
 #right{
-  right: 1%;
+  right: 20px;
 }
 
 #left{
-  left:0px;
+  left:-1%;
+  top: 20px;
 }
 
 .arrow{
   position: fixed;
-  top: 4%;
+  top: 20px;
   width: 2%;
   background-color: #f0f8ff70;
   padding: 1%;
@@ -36,12 +39,12 @@
 }
 
 #prev{
-  right: 20%;
+  right: 12%;
 }
 
 #next{
   transform: scaleX(-1);
-  left: 20%;
+  left: 12%;
 }
 
 #down{
@@ -54,20 +57,181 @@
 
 #bodyText{
   position: fixed;
-  background-color: #f0f8ff70;
-  width:40%;
-  height: 87vh;
-  padding: 2%;
-  left: 28%;
-  top: 2vh;
+  background-color: #232323;
+  padding: 3% 2%;
   border-radius: 20px;
 }
 
-#bodyText p{
-  margin: 20px;
-  color:black;
+.center{
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-#bodyText li{
-  margin: 20px;
+
+.text *{
+  color:#eee;
+  margin: 30px 10px;
+}
+
+.text h1{
+  font-size: 68px;
+  font-weight: 700;
+  font-family: 'Ubuntu', serif;
+  height: fit-content;
+  margin: 0;
+
+  color:#eee;
+}
+
+.text h2{
+  font-size: 6vh;
+  font-weight: 700;
+  font-family: 'Ubuntu Mono', serif;
+
+  color:#eee;
+}
+
+.text h3{
+  font-size: 4.5vh;
+  font-weight: 700;
+  font-family: 'Ubuntu Mono', serif;
+
+  color:#eee;
+}
+
+.text h4{
+  font-size: 3vh;
+  font-weight: 700;
+  font-family: 'Ubuntu Mono', serif;
+
+
+  color:#eee;
+}
+
+.text p, li{
+  font-size: 20px;
+  font-family: 'Ubuntu Mono', monospace;
+  color:#eee;
+}
+
+.easyRead p{
+  font-family: 'Ubuntu', monospace;
+}
+
+
+#phone{
+  position: fixed;
+
+  margin:0px;
+  height: 130vh;
+  width: 60vw;
+  z-index: 0;
+  top:2vh; 
+  
+  left: 0;
+  transform: translate(54%,0);
+}
+
+.phone-margin{
+  text-align: center;
+  position: fixed;
+  overflow-y: scroll;
+  color: #eee;
+  
+  height: 83vh;
+  width: 22vw;
+
+  top: 8vh;
+  left: 50vw;
+
+  transform: translate(-50%,0);
+
+  z-index: 20;
+}
+
+
+::-webkit-scrollbar{
+  width: 0px;
+}
+.phone-margin{
+  scrollbar-width: none;
+}
+
+.pseudoBody{
+  position: inherit;
+  width: inherit;
+  height: 100%;
+}
+
+
+.tab2{
+  display: inline-block;
+  width: fit-content;
+
+  border: 3px solid transparent;
+  border-radius: 10px 10px 0 0;
+
+
+  padding: 2vh 2vw;
+  
+  margin: 0px 10px;
+  margin-bottom: 40px;
+
+  font-size: 1.8vh;    
+
+  background-color: #444;
+
+  color: aliceblue;
+  
+  user-select: none;
+  cursor: pointer;
+
+}
+
+.tab2:hover{
+  background-color: #555;
+}
+
+.selectedTab{
+  
+  background-color: #bbb;
+  border: 3px solid aliceblue;
+  border-bottom:  3px solid transparent;
+
+  color: var(--black);
+}
+
+.selectedTab:hover{
+  background-color: #bbb;
+}
+
+
+
+/* ---------------- ANIMATIONS ----------------------------- */
+
+#startup{
+  animation: startToUp .5s forwards;
+  animation-delay: 2s;
+}
+
+#startdown{
+  animation: downToStart .5s forwards;
+}
+
+@keyframes startToUp{
+  from{
+    transform: translateY(0%);
+  }
+  to{
+    transform: translateY(-200%);
+  }
+}
+
+@keyframes downToStart{
+  from{
+    transform: translateY(200%);
+  }
+  to{
+    transform: translateY(0%);
+  }
 }

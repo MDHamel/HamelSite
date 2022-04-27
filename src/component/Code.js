@@ -29,7 +29,7 @@ export default function Code(props) {
 
     return (
         <div>
-            <div>
+            <div >
                 <div id='windowEdge' />
                 <div style={{position:"fixed", top:"1.5vh", right: "1vw"}}>
                     <div className='circle' style={{backgroundColor: "#4ce663"}}/>

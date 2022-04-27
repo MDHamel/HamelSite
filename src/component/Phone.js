@@ -3,6 +3,8 @@ import phone from "../img/phone-in-hand-COLORED.png";
 import arrow from "../img/Arrow.png"
 import { phoneText } from "../content.js";
 
+//import './Phone.css';
+
 
 export default function Phone(props){
     

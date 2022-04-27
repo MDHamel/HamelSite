@@ -1,19 +1,17 @@
 import './App.css';
-import './Phone.css';
 import {motion} from "framer-motion";
 import {useState} from 'react';
 
-import mirror from "./img/about-me-right.png"
-import aboutLeft from "./img/about-me-left.png"
-import expRight from "./img/exp-right.png"
-import expLeft from "./img/exp-left.png"
+
 import deskimg from "./img/desk.png"
 
 import arrow from "./img/Arrow.png"
+
 import Phone from './component/Phone';
 import Code from './component/Code';
+import Exp from './component/Exp';
+import AboutMe from './component/about';
 
-import * as content from "./content.js"
 
 function App() {
 
@@ -46,6 +44,8 @@ function App() {
     endState
   ];
 
+
+  //for some reason, the text class increasing margins by 30px causes this to move
   const codeRoomAni = [
     startState,
     startState,
@@ -54,7 +54,7 @@ function App() {
   ]
 
   const codeSmol = {scaleX:0.25, scaleY:0.305, bottom:"-31vh"};
-  const codeBig = {scaleX:1, scaleY:1, bottom:"auto", top:0};
+  const codeBig = {scaleX:1, scaleY:1, bottom:"auto", top:0, margin:0};
 
   const codeAni = [
     codeSmol,
@@ -84,7 +84,7 @@ function App() {
             className="pseudoBody"
             initial={{x:"-20vw", y:"150vh", rotateZ:-120}}
             animate={phoneState[aniIndex]}
-            transition={{ease: "easeIn", duration: aniIndex===0?.8:.5}}
+            transition={{delay: aniIndex===0?.5:0, ease: "easeIn", duration:.8}}
             style={{justifyContent: "center"}}
         >
             <Phone next={next}/>
@@ -96,14 +96,8 @@ function App() {
         animate={aboutMeAni[aniIndex]}
         transition={{duration:.5, ease:"easeInOut"}} 
       >
-        <motion.img className='image' id='right' src={mirror}/>
-        <motion.img className='image' id='left' src={aboutLeft}/>
-
-        <motion.div id='bodyText'>
-          <motion.p>{content.aboutMe}</motion.p>
-        </motion.div>
+        {<AboutMe />}
       </motion.div>
-
 
 
       <motion.div
@@ -112,14 +106,7 @@ function App() {
         animate={expAni[aniIndex]}
         transition={{duration:.5, ease:"easeInOut"}}
       >
-        <motion.img className='image' id="right" src={expRight}/>
-        <motion.img className='image' id="left" src={expLeft}/>
-
-        <motion.div id='bodyText'>
-          <div style={{width:"100%", height:"98%", overflowY:"scroll"}}>
-            <motion.p>{content.exp}</motion.p>
-          </div>
-        </motion.div>
+        {<Exp />}
       </motion.div>
 
       
@@ -155,6 +142,7 @@ function App() {
         >
             <Code exit={prev}/> 
         </motion.div>
+
         <motion.img src={deskimg} style={{position:"fixed", bottom:"-100vh", width:"100vw", height:"75vh"}}/>
       </motion.div>
 
