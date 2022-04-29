@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HamelSite/static/css/main.26747f7f.css",
-    "main.js": "/HamelSite/static/js/main.e760482b.js",
+    "main.css": "/HamelSite/static/css/main.fac503f6.css",
+    "main.js": "/HamelSite/static/js/main.26a20193.js",
     "react-syntax-highlighter/refractor-core-import.js": "/HamelSite/static/js/react-syntax-highlighter/refractor-core-import.8c008436.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/HamelSite/static/js/react-syntax-highlighter_languages_refractor_abap.dd6b4223.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/HamelSite/static/js/react-syntax-highlighter_languages_refractor_actionscript.9c02c330.chunk.js",
@@ -160,14 +160,17 @@
     "static/media/exp-right.png": "/HamelSite/static/media/exp-right.b23ac271a7cb08127a73.png",
     "static/media/about-me-left.png": "/HamelSite/static/media/about-me-left.917653f21551ac5d54d5.png",
     "static/media/desk.png": "/HamelSite/static/media/desk.5f8046f3bcb6b0db0c88.png",
+    "static/media/botcommands.py": "/HamelSite/static/media/botcommands.db8db009fd61b64c19a6.py",
     "static/media/exp-left.png": "/HamelSite/static/media/exp-left.4731e6ab5b5bfe5e4b7e.png",
     "static/media/Uno.py": "/HamelSite/static/media/Uno.9c0bd38bfc454b3f5b58.py",
     "static/media/BlackJack.java": "/HamelSite/static/media/BlackJack.f64ae7dfcf561860db36.java",
     "static/media/UnoCards.py": "/HamelSite/static/media/UnoCards.090d2ff0e35aff571074.py",
     "static/media/PlayingCards.java": "/HamelSite/static/media/PlayingCards.515a4de00a5ecc84b28d.java",
+    "static/media/hamelbot.py": "/HamelSite/static/media/hamelbot.e18270578daa758fe6a7.py",
+    "static/media/updater.py": "/HamelSite/static/media/updater.e5ec9613f4378c8e7538.py",
     "index.html": "/HamelSite/index.html",
-    "main.26747f7f.css.map": "/HamelSite/static/css/main.26747f7f.css.map",
-    "main.e760482b.js.map": "/HamelSite/static/js/main.e760482b.js.map",
+    "main.fac503f6.css.map": "/HamelSite/static/css/main.fac503f6.css.map",
+    "main.26a20193.js.map": "/HamelSite/static/js/main.26a20193.js.map",
     "refractor-core-import.8c008436.chunk.js.map": "/HamelSite/static/js/react-syntax-highlighter/refractor-core-import.8c008436.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.dd6b4223.chunk.js.map": "/HamelSite/static/js/react-syntax-highlighter_languages_refractor_abap.dd6b4223.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.9c02c330.chunk.js.map": "/HamelSite/static/js/react-syntax-highlighter_languages_refractor_actionscript.9c02c330.chunk.js.map",
@@ -323,7 +326,7 @@
     "787.b33774a1.chunk.js.map": "/HamelSite/static/js/787.b33774a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26747f7f.css",
-    "static/js/main.e760482b.js"
+    "static/css/main.fac503f6.css",
+    "static/js/main.26a20193.js"
   ]
 }
