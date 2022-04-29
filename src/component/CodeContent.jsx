@@ -1,5 +1,5 @@
 import React from 'react';
-import {useState} from 'react';
+import {useState, uesEffect} from 'react';
 
 import { CopyBlock, androidstudio } from 'react-code-blocks';
 
@@ -9,6 +9,10 @@ import unocards from "../code/UnoCards.py";
 
 import blackjack from "../code/BlackJack.java";
 import bjcards from "../code/PlayingCards.java";
+
+import hamelbot from "../code/hamelbot.py";
+import botcommands from "../code/botcommands.py";
+import updater from "../code/updater.py"
 
 
 
@@ -78,6 +82,29 @@ export default {
             fileName: "BlackJack.java",
             content: <MyCode src={blackjack} lang="java" />
         }
+    ],
+    DiscordBot:[
+        {
+            fileName: "ReadME.md",
+            content:
+            <div style={{margin:"2%"}}>
+                <h1>Discord Bot - Hamel Bot</h1>
+                <p>This python script is a simple discord bot that I would use on my private servers and is also a template for projects I worked on with students. This project used web scrapping and sorting through the data to find the relevant information.</p>
+                <p>Since my bot runs on a Raspberry Pi, updating became troublesome, so I created an updater script that downloads the files from my GitHub account and replaces the bot files whenever I send the update command.</p>
+            </div>
+        },
+        {
+            fileName: "HamelBot.py",
+            content: <MyCode src={hamelbot} lang="python" />
+        },
+        {
+            fileName: "botcommands.py",
+            content: <MyCode src={botcommands} lang="python" />
+        },
+        {
+            fileName: "BotUpdater.py",
+            content: <MyCode src={updater} lang="python" />
+        }
     ]
 }
 
@@ -87,14 +114,19 @@ function MyCode(props){
 
     const t = fetch(props.src).then(r => r.text()).then(text => {setState(text)});
 
+    
+    
+
 
     return(
-        <div style={{overflowY:"scroll", height:"84vh"}}>
+        <div style={{overflowY:"scroll", height:"84vh"}} id="scrollc">
             <CopyBlock
                 text={code}
+                
                 language={props.lang}
                 theme={props.theme? props.theme:androidstudio}
                 showLineNumbers={true}
+
                 startingLineNumber={1}
             />
         </div>

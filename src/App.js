@@ -84,7 +84,7 @@ function App() {
             className="pseudoBody"
             initial={{x:"-20vw", y:"150vh", rotateZ:-120}}
             animate={phoneState[aniIndex]}
-            transition={{delay: aniIndex===0?.5:0, ease: "easeIn", duration:.8}}
+            transition={{delay: (aniIndex===0?.5:0), ease: "easeIn", duration:.5}}
             style={{justifyContent: "center"}}
         >
             <Phone next={next}/>

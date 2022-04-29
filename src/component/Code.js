@@ -19,7 +19,7 @@ export default function Code(props) {
     const changeProject = (projName) => {setProject(projName); selectTab(0); };
 
     const TabConstructor = () =>{
-        return(content[project].map( (item , i) => <p onClick={()=>{selectTab(i)}} id={i===tab?"selected":""} className='tab'>{item.fileName}</p>));
+        return(content[project].map( (item , i) => <p onClick={()=>{selectTab(i);document.getElementById("scrollc").scrollTo(0,0)}} id={i===tab?"selected":""} className='tab'>{item.fileName}</p>));
     }
 
     const ProjectItem = (props) => {
@@ -52,6 +52,7 @@ export default function Code(props) {
                     <div className='projectList'>
                         <h2 className='projectHead'>Python</h2>
                         <ProjectItem>Python Uno</ProjectItem>
+                        <ProjectItem>Discord Bot</ProjectItem>
                     </div>
 
                     <div className='projectList'>
@@ -74,7 +75,7 @@ export default function Code(props) {
 
             <div id='document'>
                 <div id='body'>
-                    <p>{content[project][tab].content}</p>
+                    {content[project][tab].content}
                 </div>
             </div>
 

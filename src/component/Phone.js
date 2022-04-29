@@ -18,7 +18,7 @@ export default function Phone(props){
                     <img
                     src={arrow}
                     className="arrow"
-                    style={{position: "relative", width: "12%", padding:"4%"}}
+                    style={{position: "fixed", width: "12%", padding:"4%", left:"50%",top:"auto", bottom:"0"}}
                     id="down"
                     onClick={props.next}
                     />

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700');
 
 .psuedoBody{
   overflow:hidden;
@@ -48,7 +48,7 @@
 }
 
 #down{
-  transform:rotate(90deg);
+  transform: rotate(90deg) translate(-50%,50%);
 }
 
 #up{
@@ -70,7 +70,7 @@
 
 .text *{
   color:#eee;
-  margin: 30px 10px;
+  margin: 10px 10px;
 }
 
 .text h1{
@@ -109,13 +109,9 @@
 }
 
 .text p, li{
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'Ubuntu Mono', monospace;
   color:#eee;
-}
-
-.easyRead p{
-  font-family: 'Ubuntu', monospace;
 }
 
 
@@ -141,7 +137,7 @@
   height: 83vh;
   width: 22vw;
 
-  top: 8vh;
+  top: 12vh;
   left: 50vw;
 
   transform: translate(-50%,0);
@@ -235,3 +231,4 @@
     transform: translateY(0%);
   }
 }
+
